@@ -1,12 +1,15 @@
-class Freddy{
-    sayhi(){
+class Freddy {
+    sayhi() {
         console.log("o holera")
     }
 
-    saybye(){
+    saybye() {
         console.log("adioh mamahuevo")
     }
 }
 
 let freddy = new Freddy()
 freddy.sayhi()
+setTimeout(() => {
+    freddy.saybye()
+}, 1000)
